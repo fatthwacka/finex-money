@@ -15,8 +15,8 @@ export default function Home() {
         />
       </section>
 
-      {/* App Store Buttons */}
-      <section className="bg-[#3d4a2e] py-6 px-6">
+      {/* App Store Buttons - solid red */}
+      <section className="bg-[#e22525] py-6 px-6">
         <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="https://apps.apple.com/us/app/finex-money/id6456408372"
@@ -37,23 +37,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Heading + Description */}
-      <section className="bg-[#3d4a2e] text-white py-16 px-6">
+      {/* Heading + Description - red */}
+      <section className="bg-[#e22525] text-white py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Your Money. Your Rules. Zero Delays.
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-white/85 max-w-3xl mx-auto">
             Skip the queues and the paperwork. Open your bank account{" "}
-            <strong>instantly</strong> with just your SA ID, foreign passport,
-            or permit. Make your first deposit and unlock your mobile wallet
-            today.
+            <strong className="text-white">instantly</strong> with just your SA
+            ID, foreign passport, or permit. Make your first deposit and unlock
+            your mobile wallet today.
           </p>
         </div>
       </section>
 
-      {/* A Mobile Wallet That Is All Yours - dark red/gradient */}
-      <section className="py-20 px-6 bg-gradient-to-b from-[#8b2a1a] to-[#c44a2a] text-white">
+      {/* A Mobile Wallet That Is All Yours - red to dark orange gradient */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#e22525] to-[#c44a2a] text-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold">
@@ -63,7 +63,7 @@ export default function Home() {
             </h2>
           </div>
           <div>
-            <p className="text-lg text-gray-100">
+            <p className="text-lg text-white/90">
               Say goodbye to the old way of banking. Open a mobile wallet today
               to take complete control of your money <strong>safely</strong> and{" "}
               <strong>securely</strong>.
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Three feature cards */}
+        {/* Three feature cards - soft tinted backgrounds */}
         <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
           <div className="bg-white/15 backdrop-blur rounded-2xl p-8 text-center">
             <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
@@ -108,8 +108,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Claim Your Financial Power */}
-      <section className="py-20 px-6 bg-white">
+      {/* Claim Your Financial Power - orange to red gradient */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#c44a2a] to-[#e22525]">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center order-2 md:order-1">
             <Image
@@ -121,28 +121,28 @@ export default function Home() {
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Claim Your Financial Power
             </h2>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
-                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
-                <span>Receive your salary immediately</span>
+                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-white">Receive your salary immediately</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
-                <span>Shop online and make payments instantly</span>
+                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-white">Shop online and make payments instantly</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
-                <span>Buy airtime, data and electricity anywhere</span>
+                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-white">Buy airtime, data and electricity anywhere</span>
               </li>
             </ul>
             <a
               href="https://linktr.ee/finex_money"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#c44a2a] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              className="inline-block bg-white text-[#e22525] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
             >
               Sign Up
             </a>
@@ -150,37 +150,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Three Easy Steps */}
-      <section className="py-20 px-6 bg-[#f5f7fa]">
+      {/* Three Easy Steps - red to deep red gradient */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#e22525] to-[#8b1a1a]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-white">
             Three Easy Steps To Make It Yours
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-[#c44a2a]/60 backdrop-blur rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-white text-[#e22525] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-3">Level 1</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3 text-white">Level 1</h3>
+              <p className="text-white/80">
                 Provide SA ID, passport or permit to transact instantly
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-[#c44a2a]/60 backdrop-blur rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-white text-[#e22525] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-3">Level 2</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3 text-white">Level 2</h3>
+              <p className="text-white/80">
                 Add a permit to unlock higher balance limits
               </p>
             </div>
-            <div className="bg-white rounded-2xl p-8 shadow-sm">
-              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-[#c44a2a]/60 backdrop-blur rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-white text-[#e22525] rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-3">Level 3</h3>
-              <p className="text-gray-600">
+              <h3 className="text-xl font-bold mb-3 text-white">Level 3</h3>
+              <p className="text-white/80">
                 Add proof of address for max limits and physical card
               </p>
             </div>
@@ -189,15 +189,15 @@ export default function Home() {
             href="https://linktr.ee/finex_money"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-10 bg-[#c44a2a] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            className="inline-block mt-10 bg-white text-[#e22525] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
             Get Your Card
           </a>
         </div>
       </section>
 
-      {/* Dual Phones Image */}
-      <section className="py-16 px-6 bg-[#3d4a2e]">
+      {/* Dual Phones Image - deep red */}
+      <section className="py-16 px-6 bg-[#8b1a1a]">
         <div className="max-w-3xl mx-auto flex justify-center">
           <Image
             src="/images/dual-phones.png"
@@ -209,16 +209,16 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Support Section */}
-      <section className="py-20 px-6 bg-white">
+      {/* Support Section - deep red to red gradient */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#8b1a1a] to-[#e22525]">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-white">
             Support For Your Own Account
           </h2>
-          <div className="flex flex-col sm:flex-row gap-8 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:+27600198966"
-              className="flex items-center gap-3 text-lg hover:text-[#c44a2a] transition-colors justify-center"
+              className="flex items-center gap-3 text-lg bg-white/15 backdrop-blur rounded-full px-6 py-3 text-white hover:bg-white/25 transition-colors justify-center"
             >
               <svg
                 className="w-6 h-6"
@@ -237,7 +237,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:support@finexmoney.com"
-              className="flex items-center gap-3 text-lg hover:text-[#c44a2a] transition-colors justify-center"
+              className="flex items-center gap-3 text-lg bg-white/15 backdrop-blur rounded-full px-6 py-3 text-white hover:bg-white/25 transition-colors justify-center"
             >
               <svg
                 className="w-6 h-6"
@@ -258,8 +258,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-[#3d4a2e] text-white py-8 px-6">
+      {/* Footer - solid red */}
+      <footer className="bg-[#e22525] text-white py-8 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <Image
             src="/images/logo-white.webp"
@@ -268,7 +268,7 @@ export default function Home() {
             height={35}
             className="h-8 w-auto mx-auto mb-4"
           />
-          <p className="text-gray-300 text-sm">
+          <p className="text-white/60 text-sm">
             Finex Money (PTY) LTD is a registered credit provider NCRCP27865
           </p>
         </div>
