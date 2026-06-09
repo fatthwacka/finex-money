@@ -3,106 +3,113 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen">
-      {/* Header */}
-      <header className="bg-[#1a1a2e] text-white py-4 px-6 flex items-center justify-between">
-        <Image
-          src="/images/logo-white.webp"
-          alt="Finex Money"
-          width={160}
-          height={40}
-          className="h-10 w-auto"
-        />
-        <a
-          href="https://wa.me/27600198966"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-full text-sm font-medium transition-colors"
-        >
-          WhatsApp Us
-        </a>
-      </header>
-
-      {/* Hero Section */}
+      {/* Hero Banner - full bleed, no header */}
       <section className="relative">
         <Image
           src="/images/hero-banner.png"
-          alt="Finex Money Hero Banner"
+          alt="Finex Money - This One's Mine"
           width={3417}
           height={1500}
           className="w-full h-auto"
           priority
         />
-        <div className="bg-[#1a1a2e] text-white py-16 px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Your Money. Your Rules. Zero Delays.
-            </h1>
-            <p className="text-lg md:text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-              Skip the queues and the paperwork. Open your bank account instantly
-              with just your SA ID, foreign passport, or permit.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="https://apps.apple.com/us/app/finex-money/id6456408372"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-[#1a1a2e] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
-              >
-                Get it on App Store
-              </a>
-              <a
-                href="https://play.google.com/store/apps/details?id=com.finexmoney.wallet"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-[#0066ff] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
-              >
-                Get it on Play Store
-              </a>
-            </div>
-          </div>
+      </section>
+
+      {/* App Store Buttons */}
+      <section className="bg-[#3d4a2e] py-6 px-6">
+        <div className="max-w-3xl mx-auto flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="https://apps.apple.com/us/app/finex-money/id6456408372"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors text-center"
+          >
+            Get it on App Store
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.finexmoney.wallet"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white/10 transition-colors text-center"
+          >
+            Get it on Play Store
+          </a>
         </div>
       </section>
 
-      {/* Mobile Wallet Section */}
-      <section className="py-20 px-6 bg-white">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      {/* Heading + Description */}
+      <section className="bg-[#3d4a2e] text-white py-16 px-6">
+        <div className="max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            Your Money. Your Rules. Zero Delays.
+          </h1>
+          <p className="text-lg md:text-xl text-gray-200 max-w-3xl mx-auto">
+            Skip the queues and the paperwork. Open your bank account{" "}
+            <strong>instantly</strong> with just your SA ID, foreign passport,
+            or permit. Make your first deposit and unlock your mobile wallet
+            today.
+          </p>
+        </div>
+      </section>
+
+      {/* A Mobile Wallet That Is All Yours - dark red/gradient */}
+      <section className="py-20 px-6 bg-gradient-to-b from-[#8b2a1a] to-[#c44a2a] text-white">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              A Mobile Wallet That Is All Yours
+            <h2 className="text-3xl md:text-4xl font-bold">
+              A Mobile Wallet
+              <br />
+              That Is All Yours
             </h2>
-            <p className="text-gray-600 mb-8 text-lg">
-              Say goodbye to the old way of banking. Open a mobile wallet today
-              to take complete control of your money safely and securely.
-            </p>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
-                <span>Open instantly with just your ID, passport or permit</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
-                <span>Deposit funds to start transacting immediately</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
-                <span>Send, receive and manage your money safely</span>
-              </li>
-            </ul>
           </div>
-          <div className="flex justify-center">
-            <Image
-              src="/images/wallet-features.png"
-              alt="Finex Money mobile wallet"
-              width={600}
-              height={600}
-              className="w-full max-w-md h-auto"
-            />
+          <div>
+            <p className="text-lg text-gray-100">
+              Say goodbye to the old way of banking. Open a mobile wallet today
+              to take complete control of your money <strong>safely</strong> and{" "}
+              <strong>securely</strong>.
+            </p>
+          </div>
+        </div>
+
+        {/* Three feature cards */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+          <div className="bg-white/15 backdrop-blur rounded-2xl p-8 text-center">
+            <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z" />
+              </svg>
+            </div>
+            <p className="text-white">
+              Open <strong>instantly</strong> with just your ID, passport or
+              permit
+            </p>
+          </div>
+          <div className="bg-white/15 backdrop-blur rounded-2xl p-8 text-center">
+            <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6v12m-3-2.818l.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+            </div>
+            <p className="text-white">
+              Deposit funds to start transacting{" "}
+              <strong>immediately</strong>
+            </p>
+          </div>
+          <div className="bg-white/15 backdrop-blur rounded-2xl p-8 text-center">
+            <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center mx-auto mb-4">
+              <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z" />
+              </svg>
+            </div>
+            <p className="text-white">
+              Send, receive and manage your money <strong>safely</strong>
+            </p>
           </div>
         </div>
       </section>
 
       {/* Claim Your Financial Power */}
-      <section className="py-20 px-6 bg-[#f5f7fa]">
+      <section className="py-20 px-6 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center order-2 md:order-1">
             <Image
@@ -119,15 +126,15 @@ export default function Home() {
             </h2>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
                 <span>Receive your salary immediately</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
                 <span>Shop online and make payments instantly</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-[#0066ff] text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#c44a2a] text-xl mt-0.5">&#10003;</span>
                 <span>Buy airtime, data and electricity anywhere</span>
               </li>
             </ul>
@@ -135,7 +142,7 @@ export default function Home() {
               href="https://linktr.ee/finex_money"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#0066ff] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+              className="inline-block bg-[#c44a2a] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               Sign Up
             </a>
@@ -144,14 +151,14 @@ export default function Home() {
       </section>
 
       {/* Three Easy Steps */}
-      <section className="py-20 px-6 bg-white">
+      <section className="py-20 px-6 bg-[#f5f7fa]">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
             Three Easy Steps To Make It Yours
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-[#f5f7fa] rounded-2xl p-8">
-              <div className="w-14 h-14 bg-[#0066ff] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 1
               </div>
               <h3 className="text-xl font-bold mb-3">Level 1</h3>
@@ -159,8 +166,8 @@ export default function Home() {
                 Provide SA ID, passport or permit to transact instantly
               </p>
             </div>
-            <div className="bg-[#f5f7fa] rounded-2xl p-8">
-              <div className="w-14 h-14 bg-[#0066ff] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 2
               </div>
               <h3 className="text-xl font-bold mb-3">Level 2</h3>
@@ -168,8 +175,8 @@ export default function Home() {
                 Add a permit to unlock higher balance limits
               </p>
             </div>
-            <div className="bg-[#f5f7fa] rounded-2xl p-8">
-              <div className="w-14 h-14 bg-[#0066ff] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
+            <div className="bg-white rounded-2xl p-8 shadow-sm">
+              <div className="w-14 h-14 bg-[#c44a2a] text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">
                 3
               </div>
               <h3 className="text-xl font-bold mb-3">Level 3</h3>
@@ -182,7 +189,7 @@ export default function Home() {
             href="https://linktr.ee/finex_money"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block mt-10 bg-[#0066ff] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
+            className="inline-block mt-10 bg-[#c44a2a] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
           >
             Get Your Card
           </a>
@@ -190,7 +197,7 @@ export default function Home() {
       </section>
 
       {/* Dual Phones Image */}
-      <section className="py-16 px-6 bg-[#1a1a2e]">
+      <section className="py-16 px-6 bg-[#3d4a2e]">
         <div className="max-w-3xl mx-auto flex justify-center">
           <Image
             src="/images/dual-phones.png"
@@ -211,7 +218,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-8 justify-center">
             <a
               href="tel:+27600198966"
-              className="flex items-center gap-3 text-lg hover:text-[#0066ff] transition-colors justify-center"
+              className="flex items-center gap-3 text-lg hover:text-[#c44a2a] transition-colors justify-center"
             >
               <svg
                 className="w-6 h-6"
@@ -230,7 +237,7 @@ export default function Home() {
             </a>
             <a
               href="mailto:support@finexmoney.com"
-              className="flex items-center gap-3 text-lg hover:text-[#0066ff] transition-colors justify-center"
+              className="flex items-center gap-3 text-lg hover:text-[#c44a2a] transition-colors justify-center"
             >
               <svg
                 className="w-6 h-6"
@@ -252,7 +259,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#1a1a2e] text-white py-8 px-6">
+      <footer className="bg-[#3d4a2e] text-white py-8 px-6">
         <div className="max-w-4xl mx-auto text-center">
           <Image
             src="/images/logo-white.webp"
@@ -261,11 +268,28 @@ export default function Home() {
             height={35}
             className="h-8 w-auto mx-auto mb-4"
           />
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-300 text-sm">
             Finex Money (PTY) LTD is a registered credit provider NCRCP27865
           </p>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <a
+        href="https://wa.me/27600198966"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25d366] hover:bg-[#20bd5a] w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-colors"
+        aria-label="Chat on WhatsApp"
+      >
+        <svg
+          className="w-8 h-8 text-white"
+          fill="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+      </a>
     </main>
   );
 }
