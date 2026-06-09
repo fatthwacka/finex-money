@@ -108,8 +108,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Claim Your Financial Power - orange to red gradient */}
-      <section className="py-20 px-6 bg-gradient-to-b from-[#c44a2a] to-[#e22525]">
+      {/* Claim Your Financial Power - dark block with red accents */}
+      <section className="py-20 px-6 bg-[#1a1a2e]">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="flex justify-center order-2 md:order-1">
             <Image
@@ -126,15 +126,15 @@ export default function Home() {
             </h2>
             <ul className="space-y-4 mb-8">
               <li className="flex items-start gap-3">
-                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#e22525] text-xl mt-0.5">&#10003;</span>
                 <span className="text-white">Receive your salary immediately</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#e22525] text-xl mt-0.5">&#10003;</span>
                 <span className="text-white">Shop online and make payments instantly</span>
               </li>
               <li className="flex items-start gap-3">
-                <span className="text-white text-xl mt-0.5">&#10003;</span>
+                <span className="text-[#e22525] text-xl mt-0.5">&#10003;</span>
                 <span className="text-white">Buy airtime, data and electricity anywhere</span>
               </li>
             </ul>
@@ -142,7 +142,7 @@ export default function Home() {
               href="https://linktr.ee/finex_money"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-white text-[#e22525] px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
+              className="inline-block bg-[#e22525] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition-opacity"
             >
               Sign Up
             </a>
